@@ -54,7 +54,7 @@ theme:
 # Plugins
 plugins:
   - search
-  - simple
+  #- simple
   - git-authors:
       show_contribution: true
       show_line_count: true
