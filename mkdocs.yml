@@ -1,9 +1,9 @@
 site_name: Test docs
 site_description: 'A docs test'
-site_author: 'Michael Hausenblas'
+site_author: 'David Caddick'
 docs_dir: docs/
-repo_name: 'mhausenblas/mkdocs-template'
-repo_url: 'https://github.com/mhausenblas/mkdocs-template'
+repo_name: 'dcaddick/gsd_test4'
+repo_url: 'https://github.com/dcaddick/gsd_test4'
 nav:
     - Home: index.md
 theme:
