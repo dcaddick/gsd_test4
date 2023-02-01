@@ -13,6 +13,21 @@ jobs:
         uses: actions/checkout@v1
         with:
           fetch-depth: 0
+      - name: Install plugins
+        run: | 
+          python -m pip install --upgrade pip setuptools wheel
+          pip install mkdocs-material
+          pip install mkdocs-minify-plugin==0.3.0
+          pip install mkdocs-plugin-progress
+      #    pip install mkdocs-techdocs-core
+      #    pip show --verbose mkdocs-techdocs-core
+      #    pip install mkdocs-git-revision-date-localized-plugin
+      #    pip show --verbose mkdocs-git-revision-date-localized-plugin
+      #    pip show --verbose mkdocs-material --version
+        # pip install mkdocs-table-reader-plugin
+        # pip install mkdocs-glightbox
+          
+          
       - name: Deploy docs
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
